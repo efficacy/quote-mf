@@ -2,13 +2,13 @@ module.exports = {
     quote: quote
 }
 
-function quote(tags, source, next) {
-    var quotes = load(source || 'pulp-fiction')
+function quote(source, tags, next) {
+    var quotes = loadFrom(source)
     var quote = selectFrom(quotes, matching(enhanced(tags)))
     return next && next(null, quote) || quote
 }
 
-function load(source) {
+function loadFrom(source) {
     try {
         return require('./lib/quotes/' + source)
     } catch(err) {
