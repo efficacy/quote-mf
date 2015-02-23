@@ -21,10 +21,14 @@ function enhanced(tags) {
     tags.associatedWith = function(quote) {
         if (tags.length === 0) return true
         return tags.every(function(tag) {
-            return quote.tags.concat(quote.who.toLowerCase()).indexOf(tag.toLowerCase()) !== -1
+            return quote.tags.concat(quote.who).map(toLowerCase).indexOf(tag.toLowerCase()) !== -1
         })
     }
     return tags
+}
+
+function toLowerCase(s) {
+    return s.toLowerCase()
 }
 
 function selectFrom(quotes, toSpecifiedSubset) {
