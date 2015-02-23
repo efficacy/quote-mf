@@ -1,6 +1,6 @@
 {
   "name": "quote-mf",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Do you speak it?",
   "main": "index.js",
   "scripts": {
