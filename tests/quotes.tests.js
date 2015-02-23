@@ -1,5 +1,7 @@
 var assert = require('assert')
 var quote = require('../index').quote
+var fs = require('fs')
+var path = require('path')
 
 describe('Quotes', function() {
 
@@ -29,6 +31,19 @@ describe('Quotes', function() {
             quotes[quote().text] = 1
         }
         assert(Object.keys(quotes).length > 1, 'Quotations were not randomly selected')
+    })
+
+    it('should ensure quotes are valid js', function(done) {
+        fs.readdir(path.join(process.cwd(), '/lib/quotes'), function(err, files) {
+            if (err) return done(err)
+            done(files.reduce(function(_, file) {
+                try {
+                    require('../lib/quotes/' + file)
+                } catch(err) {
+                    return err
+                }
+            }))
+        })
     })
 
 })
