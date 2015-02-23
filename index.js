@@ -19,8 +19,7 @@ function load(source) {
 function enhanced(tags) {
     tags = tags && [].concat(tags) || []
     tags.associatedWith = function(quote) {
-        if (tags.length === 0) return true
-        return tags.every(function(tag) {
+        return tags.length === 0 || tags.every(function(tag) {
             return quote.tags.concat(quote.who).map(toLowerCase).indexOf(tag.toLowerCase()) !== -1
         })
     }
