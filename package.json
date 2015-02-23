@@ -1,6 +1,6 @@
 {
   "name": "quote-mf",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Do you speak it?",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,9 @@
   },
   "author": "Stephen Cresswell",
   "license": "ISC",
-  "repository" : {
-    "type" : "git",
-    "url" : "git@github.com:acuminous/quote-mf.git"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:acuminous/quote-mf.git"
   },
   "devDependencies": {
     "lodash": "^3.3.0",
