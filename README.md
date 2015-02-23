@@ -1,5 +1,5 @@
 # Quote-MF
-[![Build Status](https://travis-ci.org/acuminous/quotes-mf.svg?branch=master)](https://travis-ci.org/tes/quotes-mf)
+[![Build Status](https://travis-ci.org/acuminous/quotes-mf.svg?branch=master)](https://travis-ci.org/acuminous/quotes-mf)
 
 [![NPM](https://nodei.co/npm/quotes-mf.png?downloads=true)](https://nodei.co/npm/quotes-mf/)
 
