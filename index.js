@@ -37,6 +37,6 @@ function selectFrom(quotes, toSpecifiedSubset) {
 
 function matching(tags) {
     return function(quotes, quote) {
-        return tags.associatedWith(quote) ? quotes.concat(quote) :  quotes
+        return tags.associatedWith(quote) ? quotes.concat(quote) : quotes
     }
 }
