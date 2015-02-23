@@ -1,7 +1,7 @@
 # Quote-MF
-[![Build Status](https://travis-ci.org/acuminous/quotes-mf.svg?branch=master)](https://travis-ci.org/acuminous/quotes-mf)
+[![Build Status](https://travis-ci.org/acuminous/quotes-mf.svg?branch=master)](https://travis-ci.org/acuminous/quote-mf)
 
-[![NPM](https://nodei.co/npm/quotes-mf.png?downloads=true)](https://nodei.co/npm/quotes-mf/)
+[![NPM](https://nodei.co/npm/quote-mf.png?downloads=true)](https://nodei.co/npm/quote-mf/)
 
 
 Node module which provides a context specific quote from the given source
