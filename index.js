@@ -12,7 +12,11 @@ function loadFrom(source) {
     try {
         return require('./lib/quotes/' + source)
     } catch(err) {
-        return
+        try {
+            return require(source)
+        } catch(err) {
+            return
+        }
     }
 }
 
